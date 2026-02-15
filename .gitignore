@@ -30,8 +30,9 @@ intent-model-final-p4/
 intent-model-p4/
 models/
 
-# Evaluation results (images can be large)
-evaluation_results/
+# Evaluation results - keep images for README
+# evaluation_results/
+!evaluation_results/*.png
 
 # Logs
 logs/

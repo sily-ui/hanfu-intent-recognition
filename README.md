@@ -12,6 +12,47 @@ This is a fine-tuned BERT model for intent classification in Chinese, specifical
 - `knowledge`: Knowledge and historical questions
 - `dialogue`: Casual conversation
 
+## Evaluation Results
+
+### Overall Performance
+
+| Metric | Score |
+|--------|-------|
+| Accuracy | 90.00% |
+| Precision | 0.9076 |
+| Recall | 0.9000 |
+| F1-Score | 0.8989 |
+
+### Training Curves
+
+![Training Loss Curve](evaluation_results/loss_curve.png)
+
+![Evaluation Metrics Curve](evaluation_results/metrics_curve.png)
+
+### Classification Details
+
+![F1 Score per Class](evaluation_results/f1_per_class.png)
+
+![Confusion Matrix](evaluation_results/confusion_matrix.png)
+
+### Per-Class Metrics
+
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|-----------|---------|
+| design | 0.9717 | 1.0000 | 0.9856 | 103 |
+| compliance_check | 0.7874 | 0.9804 | 0.8734 | 102 |
+| knowledge | 0.9277 | 0.7476 | 0.8280 | 103 |
+| dialogue | 0.9328 | 0.8803 | 0.9058 | 142 |
+
+### Training Parameters
+
+| Parameter | Value |
+|-----------|-------|
+| Learning Rate | 2e-05 |
+| Batch Size | 8 |
+| Epochs | 5 |
+| Weight Decay | 0.01 |
+
 ## Quick Start
 
 ### Installation
